@@ -1,0 +1,182 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f0f2f5;
+  margin: 0;
+  padding: 0;
+}
+html, body {
+  height: 100%;
+}
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  background: #ffffff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 30px;
+  border-radius: 12px;
+}
+h2 {
+  color: #333;
+  margin-bottom: 20px;
+}
+input, textarea, select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+button {
+  background-color: #007bff;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+button:hover {
+  background-color: #0056b3;
+}
+.logout {
+  float: right;
+  background-color: #dc3545;
+  margin-bottom: 20px;
+}
+.logout:hover {
+  background-color: #b52a37;
+}
+.ticket-item {
+  border-bottom: 1px solid #eee;
+  padding: 15px 0;
+}
+.ticket-item:last-child {
+  border-bottom: none;
+}
+.ticket-meta {
+  font-size: 12px;
+  color: #777;
+}
+select {
+  background: #fff;
+}
+.rbc-calendar {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .container {
+    margin: 10px;
+    padding: 20px;
+    border-radius: 8px;
+  }
+
+  button, input, textarea, select {
+    font-size: 16px;
+  }
+
+  h2 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .logout {
+    float: none;
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .ticket-item {
+    font-size: 14px;
+  }
+}
+
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #121212;
+    color: #f0f0f0;
+  }
+
+  .container {
+    background: #1e1e1e;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+  }
+
+  input, textarea, select {
+    background: #2b2b2b;
+    color: #f0f0f0;
+    border: 1px solid #444;
+  }
+
+  button {
+    background-color: #2196f3;
+  }
+
+  button:hover {
+    background-color: #1565c0;
+  }
+
+  .logout {
+    background-color: #e53935;
+  }
+
+  .logout:hover {
+    background-color: #b71c1c;
+  }
+
+  .ticket-meta {
+    color: #ccc;
+  }
+
+  .rbc-calendar {
+    background-color: #1e1e1e;
+    color: #f0f0f0;
+  }
+}
+body.dark-mode {
+  background: #121212;
+  color: #f0f0f0;
+}
+
+body.dark-mode .container {
+  background: #1e1e1e;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+}
+
+body.dark-mode input,
+body.dark-mode textarea,
+body.dark-mode select {
+  background: #2b2b2b;
+  color: #f0f0f0;
+  border: 1px solid #444;
+}
+
+body.dark-mode button {
+  background-color: #2196f3;
+}
+
+body.dark-mode button:hover {
+  background-color: #1565c0;
+}
+
+body.dark-mode .logout {
+  background-color: #e53935;
+}
+
+body.dark-mode .logout:hover {
+  background-color: #b71c1c;
+}
+
+body.dark-mode .ticket-meta {
+  color: #ccc;
+}
+
+body.dark-mode .rbc-calendar {
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+}
